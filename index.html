@@ -1,0 +1,291 @@
+<!doctype html>
+<html
+  class="scroll-smooth scrollbar-thumb-secondary scrollbar-none sm:scrollbar-auto"
+  lang="en"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NATURE | Explore The Wild</title>
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <!-- Nav Bar  -->
+    <nav
+      class="hidden bg-primary w-full px-8 py-4 md:flex justify-between select-none sticky top-0"
+    >
+      <div class="cursor-pointer">
+        <a href="#"><img class="h-10" src="./Assets/logo.png" alt="LOGO" /></a>
+      </div>
+      <ul
+        class="flex gap-10 font-body text-lightBg justify-center items-center text-xl"
+      >
+        <li class="cursor-pointer"><a href="#">Home</a></li>
+        <li class="cursor-pointer"><a href="#gallery">Gallery</a></li>
+        <li class="cursor-pointer"><a href="#about">About</a></li>
+        <li class="cursor-pointer"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Nav Bar End  -->
+
+    <!-- Mobile Menu Bar -->
+
+    <nav class="bg-primary select-none w-full sticky top-0 py-8 md:hidden z-10">
+      <!-- logo -->
+      <span class="text-lightBg cursor-pointer absolute left-4 top-3">
+        <a href="#"><img class="h-10" src="./Assets/logo.png" alt="LOGO" /></a>
+      </span>
+
+      <!-- menu icon -->
+      <span
+        id="humberg"
+        class="text-3xl text-lightBg cursor-pointer absolute right-4 top-3"
+        >&#9776;</span
+      >
+
+      <!-- close icon -->
+      <span
+        id="cancel"
+        class="hidden text-4xl text-lightBg cursor-pointer absolute right-4 top-2"
+        >&times;</span
+      >
+
+      <div id="mobileMenu" class="hidden">
+        <ul
+          class="text-lightBg flex flex-col justify-center items-center gap-2 text-xl"
+        >
+          <li class="link cursor-pointer"><a href="#">Home</a></li>
+          <li class="link cursor-pointer"><a href="#gallery">Gallery</a></li>
+          <li class="link cursor-pointer"><a href="#about">About</a></li>
+          <li class="link cursor-pointer"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile Menu Bar End -->
+
+    <!-- Hero Section  -->
+    <section class="w-full h-auto select-none">
+      <div class="w-full h-auto flex flex-col md:flex-row md:items-start">
+        <div class="md:w-1/2 py-12 px-10">
+          <div
+            class="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 items-center md:aspect-square"
+          >
+            <h1
+              class="font-heading text-primary text-center text-[clamp(2.5rem,6vw,6rem)] leading-tight wrap-break-word"
+            >
+              Nature Empowers Human Life.
+            </h1>
+            <p class="font-body text-secondary text-center text-xl/8 italic">
+              Nature is the valuable assets on the earth.
+            </p>
+            <span
+              class="text-lightBg bg-secondary font-bold hover:bg-primary transition duration-800 ease-in-out cursor-pointer shadow-custom px-6 py-3 rounded-lg md:text-lg"
+              >LET'S EXPLORE</span
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 h-full">
+          <div class="">
+            <img
+              class="md:aspect-square object-cover rounded-sm md:rounded-none md:rounded-b-xl"
+              src="./Assets/heroImage.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="">
+      <p
+        class="text-center text-2xl md:text-4xl py-6 md:py-8 lg:py-10 font-semibold text-primary"
+      >
+        Gallery
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5"
+      >
+        <div class="md:col-span-2 rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img4.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img1.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img3.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="md:col-span-2 lg:col-span-1 rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img2.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="lg:col-span-2 rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img5.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img6.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover aspect-square"
+            src="./Assets/images/img7.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden">
+          <img
+            class="h-full w-full object-cover aspect-square"
+            src="./Assets/images/img9.jpg"
+            alt="image"
+          />
+        </div>
+        <div
+          class="sm:col-span-2 lg:col-span-2 md:col-span-2 rounded-md overflow-hidden"
+        >
+          <img
+            class="h-full w-full object-cover"
+            src="./Assets/images/img8.jpg"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- About Section -->
+    <section id="about" class="select-none">
+      <p
+        class="text-center text-2xl md:text-4xl py-6 md:py-8 lg:py-10 font-semibold text-primary"
+      >
+        About
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 px-5">
+        <div class="">
+          <img class="rounded-md" src="./Assets/images/img10.jpg" alt="image" />
+        </div>
+        <div
+          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary p-4 rounded-md"
+        >
+          <p>
+            Nature is not just scenery - it is life itself. From fresh air to
+            clean water, every part of nature supports human existence.
+          </p>
+        </div>
+        <div
+          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary p-4 rounded-md"
+        >
+          <p>
+            Our goal is to encourage people to value the beauty of the
+            environment and take small steps toward a healthier planet.
+          </p>
+        </div>
+        <div class="">
+          <img
+            class="object-cover rounded-md"
+            src="./Assets/images/img12.jpg"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-lightBg font-body font-bold pb-8">
+      <p
+        class="text-center text-2xl md:text-4xl py-6 md:py-8 lg:py-10 font-semibold text-primary"
+      >
+        Contact
+      </p>
+      <div class="flex flex-col sm:flex-row gap-5 px-5">
+        <div class="sm:w-1/2 overflow-hidden rounded-md">
+          <img
+            class="aspect-video object-cover h-full w-full rounded-md transition-all duration-200 ease-in-out hover:brightness-110"
+            src="./Assets/images/img11.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="sm:w-1/2">
+          <form class="flex flex-col gap-5">
+            <input
+              class="bg-secondary p-3 outline-none rounded-md focus-within:bg-primary"
+              type="text"
+              name="Name"
+              placeholder="Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              class="bg-secondary p-3 outline-none rounded-md focus-within:bg-primary"
+              type="email"
+              name="Email"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              class="bg-secondary p-5 outline-none resize-none max-h-50 rounded-md focus-within:bg-primary"
+              rows="5"
+              maxlength="400"
+              name="message"
+              placeholder="Write some message here"
+              required
+            ></textarea>
+            <input
+              class="bg-secondary p-3 outline-none rounded-md hover:bg-primary transition duration-500 ease-in-out cursor-pointer shadow-custom"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+    <footer class="bg-primary select-none">
+      <div class="py-4">
+        <div class="flex justify-center items-center gap-5">
+          <a href="#"><img class="h-6" src="./Assets/logo.png" alt="logo" /></a>
+          <a href="https://github.com/TechSimplifide" target="_blank"
+            ><img class="h-6" src="./Assets/gitHub.png" alt="gitHub"
+          /></a>
+        </div>
+        <p class="text-center text-lightBg pt-2 font-body">
+          All rights are reserved by NATURE &COPY; 2026
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="./src/menu.js"></script>
+  </body>
+</html>
