@@ -15,59 +15,65 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
-    <!-- Nav Bar  -->
-    <nav
-      class="hidden bg-primary w-full px-8 py-4 md:flex justify-between select-none sticky top-0"
-    >
-      <div class="cursor-pointer">
-        <a href="#"><img class="h-10" src="./Assets/logo.png" alt="LOGO" /></a>
-      </div>
-      <ul
-        class="flex gap-10 font-body text-lightBg justify-center items-center text-xl"
-      >
-        <li class="cursor-pointer"><a href="#">Home</a></li>
-        <li class="cursor-pointer"><a href="#gallery">Gallery</a></li>
-        <li class="cursor-pointer"><a href="#about">About</a></li>
-        <li class="cursor-pointer"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- Nav Bar End  -->
-
-    <!-- Mobile Menu Bar -->
-
-    <nav class="bg-primary select-none w-full sticky top-0 py-8 md:hidden z-10">
-      <!-- logo -->
-      <span class="text-lightBg cursor-pointer absolute left-4 top-3">
-        <a href="#"><img class="h-10" src="./Assets/logo.png" alt="LOGO" /></a>
-      </span>
-
-      <!-- menu icon -->
-      <span
-        id="humberg"
-        class="text-3xl text-lightBg cursor-pointer absolute right-4 top-3"
-        >&#9776;</span
-      >
-
-      <!-- close icon -->
-      <span
-        id="cancel"
-        class="hidden text-4xl text-lightBg cursor-pointer absolute right-4 top-2"
-        >&times;</span
-      >
-
-      <div id="mobileMenu" class="hidden">
+    <header class="bg-primary select-none w-full sticky top-0">
+      <!-- Nav Bar  -->
+      <nav class="hidden px-8 py-4 md:flex justify-between">
+        <div class="cursor-pointer">
+          <a href="#"
+            ><img class="h-10" src="./Assets/logo.png" alt="LOGO"
+          /></a>
+        </div>
         <ul
-          class="text-lightBg flex flex-col justify-center items-center gap-2 text-xl"
+          class="flex gap-10 font-body text-lightBg justify-center items-center text-xl"
         >
-          <li class="link cursor-pointer"><a href="#">Home</a></li>
-          <li class="link cursor-pointer"><a href="#gallery">Gallery</a></li>
-          <li class="link cursor-pointer"><a href="#about">About</a></li>
-          <li class="link cursor-pointer"><a href="#contact">Contact</a></li>
+          <li class="cursor-pointer"><a href="#">Home</a></li>
+          <li class="cursor-pointer"><a href="#gallery">Gallery</a></li>
+          <li class="cursor-pointer"><a href="#about">About</a></li>
+          <li class="cursor-pointer"><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <!-- Mobile Menu Bar End -->
+      </nav>
+      <!-- Nav Bar End  -->
 
+      <!-- Mobile Menu Bar -->
+
+      <nav class="py-8 md:hidden relative">
+        <!-- logo -->
+        <span class="text-lightBg cursor-pointer absolute left-4 top-3">
+          <a href="#"
+            ><img class="h-10" src="./Assets/logo.png" alt="LOGO"
+          /></a>
+        </span>
+
+        <!-- menu icon -->
+        <span
+          id="humberg"
+          class="text-3xl text-lightBg cursor-pointer absolute right-4 top-3"
+          >&#9776;</span
+        >
+
+        <!-- close icon -->
+        <span
+          id="cancel"
+          class="hidden text-4xl text-lightBg cursor-pointer absolute right-4 top-2"
+          >&times;</span
+        >
+
+        <div
+          id="mobileMenu"
+          class="hidden bg-primary/60 backdrop-blur-sm absolute left-0 top-full w-full z-10 py-5"
+        >
+          <ul
+            class="text-lightBg flex flex-col justify-center items-center gap-2 text-xl"
+          >
+            <li class="link cursor-pointer"><a href="#">Home</a></li>
+            <li class="link cursor-pointer"><a href="#gallery">Gallery</a></li>
+            <li class="link cursor-pointer"><a href="#about">About</a></li>
+            <li class="link cursor-pointer"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Menu Bar End -->
+    </header>
     <!-- Hero Section  -->
     <section class="w-full h-auto select-none">
       <div class="w-full h-auto flex flex-col md:flex-row md:items-start">
@@ -193,7 +199,7 @@
           <img class="rounded-md" src="./Assets/images/img10.jpg" alt="image" />
         </div>
         <div
-          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary p-4 rounded-md"
+          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary/90 p-4 rounded-md"
         >
           <p>
             Nature is not just scenery - it is life itself. From fresh air to
@@ -201,7 +207,7 @@
           </p>
         </div>
         <div
-          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary p-4 rounded-md"
+          class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary/90 p-4 rounded-md"
         >
           <p>
             Our goal is to encourage people to value the beauty of the
@@ -229,7 +235,7 @@
       <div class="flex flex-col sm:flex-row gap-5 px-5">
         <div class="sm:w-1/2 overflow-hidden rounded-md">
           <img
-            class="aspect-video object-cover h-full w-full rounded-md transition-all duration-200 ease-in-out hover:brightness-110"
+            class="aspect-video object-cover h-full w-full rounded-md"
             src="./Assets/images/img11.jpg"
             alt="image"
           />
