@@ -1,8 +1,5 @@
 <!doctype html>
-<html
-  class="scroll-smooth scrollbar-thumb-secondary scrollbar-none sm:scrollbar-auto"
-  lang="en"
->
+<html class="scroll-smooth scrollbar-thumb-secondary" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +12,7 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
-    <header class="bg-primary select-none w-full sticky top-0">
+    <header class="bg-primary select-none w-full sticky top-0 z-50">
       <!-- Nav Bar  -->
       <nav class="hidden px-8 py-4 md:flex justify-between">
         <div class="cursor-pointer">
@@ -78,9 +75,7 @@
     <section class="w-full h-auto select-none">
       <div class="w-full h-auto flex flex-col md:flex-row md:items-start">
         <div class="md:w-1/2 py-12 px-10">
-          <div
-            class="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 items-center md:aspect-square"
-          >
+          <div class="flex flex-col gap-6 items-center md:aspect-square">
             <h1
               class="font-heading text-primary text-center text-[clamp(2.5rem,6vw,6rem)] leading-tight wrap-break-word"
             >
@@ -89,10 +84,12 @@
             <p class="font-body text-secondary text-center text-xl/8 italic">
               Nature is the valuable assets on the earth.
             </p>
-            <span
-              class="text-lightBg bg-secondary font-bold hover:bg-primary transition duration-800 ease-in-out cursor-pointer shadow-custom px-6 py-3 rounded-lg md:text-lg"
-              >LET'S EXPLORE</span
-            >
+            <a href="#gallery">
+              <span
+                class="text-lightBg bg-secondary font-bold hover:bg-primary transition duration-800 ease-in-out cursor-pointer shadow-custom px-6 py-3 rounded-lg md:text-lg"
+                >LET'S EXPLORE</span
+              >
+            </a>
           </div>
         </div>
         <div class="md:w-1/2 h-full">
@@ -118,67 +115,69 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5"
       >
-        <div class="md:col-span-2 rounded-md overflow-hidden">
+        <div class="md:col-span-2 rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img4.jpg"
             alt="image"
           />
         </div>
-        <div class="rounded-md overflow-hidden">
+        <div class="rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img1.jpg"
             alt="image"
           />
         </div>
-        <div class="rounded-md overflow-hidden">
+        <div class="rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img3.jpg"
             alt="image"
           />
         </div>
-        <div class="md:col-span-2 lg:col-span-1 rounded-md overflow-hidden">
+        <div
+          class="md:col-span-2 lg:col-span-1 rounded-md overflow-hidden h-auto"
+        >
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img2.jpg"
             alt="image"
           />
         </div>
-        <div class="lg:col-span-2 rounded-md overflow-hidden">
+        <div class="lg:col-span-2 rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img5.jpg"
             alt="image"
           />
         </div>
-        <div class="rounded-md overflow-hidden">
+        <div class="rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img6.jpg"
             alt="image"
           />
         </div>
-        <div class="rounded-md overflow-hidden">
+        <div class="rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover aspect-square"
+            class="h-full object-cover aspect-square transform filter hover:brightness-110"
             src="./Assets/images/img7.jpg"
             alt="image"
           />
         </div>
-        <div class="rounded-md overflow-hidden">
+        <div class="rounded-md overflow-hidden h-auto">
           <img
-            class="h-full w-full object-cover aspect-square"
+            class="h-full object-cover aspect-square transform filter hover:brightness-110"
             src="./Assets/images/img9.jpg"
             alt="image"
           />
         </div>
         <div
-          class="sm:col-span-2 lg:col-span-2 md:col-span-2 rounded-md overflow-hidden"
+          class="sm:col-span-2 lg:col-span-2 md:col-span-2 rounded-md overflow-hidden h-auto"
         >
           <img
-            class="h-full w-full object-cover"
+            class="h-full object-cover transform filter hover:brightness-110"
             src="./Assets/images/img8.jpg"
             alt="image"
           />
@@ -195,8 +194,12 @@
         About
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 px-5">
-        <div class="">
-          <img class="rounded-md" src="./Assets/images/img10.jpg" alt="image" />
+        <div class="rounded-md overflow-hidden h-auto">
+          <img
+            class="block h-full object-cover transition duration-500 ease-in-out hover:scale-110 cursor-pointer"
+            src="./Assets/images/img10.jpg"
+            alt="image"
+          />
         </div>
         <div
           class="md:text-2xl lg:text-3xl text-xl text-lightBg font-body flex items-center bg-secondary/90 p-4 rounded-md"
@@ -214,9 +217,9 @@
             environment and take small steps toward a healthier planet.
           </p>
         </div>
-        <div class="">
+        <div class="overflow-hidden rounded-md h-auto">
           <img
-            class="object-cover rounded-md"
+            class="block h-full object-cover transition duration-500 ease-in-out hover:scale-110 cursor-pointer"
             src="./Assets/images/img12.jpg"
             alt="image"
           />
@@ -233,9 +236,9 @@
         Contact
       </p>
       <div class="flex flex-col sm:flex-row gap-5 px-5">
-        <div class="sm:w-1/2 overflow-hidden rounded-md">
+        <div class="sm:w-1/2 overflow-hidden rounded-md h-auto">
           <img
-            class="aspect-video object-cover h-full w-full rounded-md"
+            class="block aspect-video object-cover h-full transition duration-500 ease-in-out hover:scale-110 cursor-pointer"
             src="./Assets/images/img11.jpg"
             alt="image"
           />
